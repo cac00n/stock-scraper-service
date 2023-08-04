@@ -11,7 +11,4 @@ class StockMarket(str, Enum):
 
 
 class BaseUrl(str, Enum):
-    ariva: str = 'https://www.ariva.de/IE00B4L5Y983/kurse/historische-kurse?go=1&boerse_id={stock_market}&month=&currency={currency}&clean_split=1&clean_payout=1&clean_bezug=1'
-
-
-
+    ariva: str = "https://www.ariva.de/IE00B4L5Y983/kurse/historische-kurse?go=1&boerse_id={stock_market}&month=&currency={currency}&clean_split=1&clean_payout=1&clean_bezug=1"
