@@ -1,0 +1,10 @@
+# Environments
+.venv
+
+# Intellij
+.idea
+
+# caches
+.pytest_cache
+__pycache__
+
