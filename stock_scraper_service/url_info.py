@@ -7,7 +7,14 @@ class Currency(str, Enum):
 
 
 class StockMarket(str, Enum):
-    xetra: str = "3"
+    frankfurt: str = "1"
+    hamburg: str = "2"
+    hannover: str = "3"
+    munich: str = "4"
+    l_and_s: str = "16"
+    xetra: str = "45"
+    tradegate: str = "131"
+    gettex: str = "207"
 
 
 class BaseUrl(str, Enum):
