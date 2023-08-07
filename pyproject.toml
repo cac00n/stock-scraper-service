@@ -2,7 +2,7 @@
 name = "stock_scraper_service"
 version = "0.0.1"
 description = "Scraper service to get stock information from external sourcee"
-authors = ["k4tzi <kikiwi77@gmail.com>"]
+authors = ["k4tzi", "jibachi"]
 readme = "README.md"
 packages = [{include = "stock_scraper_service"}]
 
