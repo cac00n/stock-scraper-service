@@ -1,5 +1,5 @@
-name: Code Linting
-run-name: Running Github Actions Linting 🚀
+name: CI Pipeline
+run-name: Running Github Actions CI  🚀
 on: [push, pull_request]
 jobs:
   Run-Package-Installation:
@@ -36,4 +36,17 @@ jobs:
       - name: Run all linting
         run: make lint
 
+  Run-Python-Testing:
+    runs-on: ubuntu-latest
+    needs: Run-Package-Installation
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2
+      - uses: actions/cache@v3
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
+      - name: Run all tests
+        run: make test
 
