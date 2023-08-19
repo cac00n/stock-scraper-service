@@ -3,7 +3,17 @@
 Python microservice to scrape stocks and save into a DB
 
 ## Installation
-todo
+To install the python package, run
+
+```commandline
+poetry install
+```
+
+or for unix based system
+
+```commandline
+make install
+```
 
 ## Usage
 todo

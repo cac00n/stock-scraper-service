@@ -1,7 +1,6 @@
 import pytest
 
 from stock_scraper_service.url_info import BaseUrl, Currency, StockMarket
-
 from stock_scraper_service.url_parser import generate_url
 
 
