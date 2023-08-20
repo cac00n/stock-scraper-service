@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stock_scraper_service"
-version = "0.0.1"
+version = "0.0.2"
 description = "Scraper service to get stock information from external sourcee"
 authors = ["k4tzi", "jibachi"]
 readme = "README.md"
@@ -9,6 +9,8 @@ packages = [{include = "stock_scraper_service"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 lxml = "^4.9.3"
+pandas = "^2.0.3"
+pydantic = "^2.2.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
@@ -16,6 +18,8 @@ black = "^23.7.0"
 isort = "^5.12.0"
 ruff = "^0.0.282"
 mypy = "^1.4.1"
+pytest-mock = "^3.11.1"
+pandas-stubs = "^2.0.3.230814"
 
 [build-system]
 requires = ["poetry-core"]
@@ -23,3 +27,13 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 line-length = 120
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+disallow_untyped_calls=true
+disallow_untyped_defs=true
+disallow_incomplete_defs=true
+check_untyped_defs=true
+disallow_untyped_decorators=true
