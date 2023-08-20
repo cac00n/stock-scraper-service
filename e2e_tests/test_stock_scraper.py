@@ -1,11 +1,11 @@
 import pandas as pd
 
 from stock_scraper_service.config import UrlScraperSettings
+from stock_scraper_service.stock_scraper import StockScraper
 from stock_scraper_service.url_info import BaseUrl, Currency, StockMarket
-from stock_scraper_service.url_parser import StockScraper
 
 
-def test_url_scraper() -> None:
+def test_stock_scraper() -> None:
     settings = UrlScraperSettings(
         base_url=BaseUrl.ariva,
         currency=Currency.eur,

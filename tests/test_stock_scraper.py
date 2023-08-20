@@ -3,8 +3,8 @@ import pytest
 from pytest_mock import MockerFixture
 
 from stock_scraper_service.config import UrlScraperSettings
+from stock_scraper_service.stock_scraper import StockScraper
 from stock_scraper_service.url_info import BaseUrl, Currency, StockMarket
-from stock_scraper_service.url_parser import StockScraper
 
 MOCKED_DATA_DF = pd.DataFrame({"Schluss": [22.3, 12.1, 20.2], "Erster": [3.1, 2.1, 0.2], "Datum": [0, 1, 2]})
 
