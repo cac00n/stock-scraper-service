@@ -4,7 +4,7 @@
 
 
 PRODUCTION_CODE = stock_scraper_service
-TESTS = tests
+TESTS = tests e2e_tests
 
 
 help:		## Show this help.
