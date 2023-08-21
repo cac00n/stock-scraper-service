@@ -4,7 +4,7 @@
 
 
 PRODUCTION_CODE = stock_scraper_service
-TESTS = tests
+TESTS = tests e2e_tests
 
 .DEFAULT_GOAL:=all
 
