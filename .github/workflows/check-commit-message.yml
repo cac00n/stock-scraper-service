@@ -21,8 +21,9 @@ jobs:
     name: Check Commit Message
     runs-on: ubuntu-latest
     steps:
-      - name: Check for Resolves / Fixes
+      - name: Check for conventional commit message
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^(build|chore|ci|docs|style|refactor|perf|test)!*:'
-          error: 'You need at least one "build|chore|ci|docs|style|refactor|perf|test: #<issue number>" line.'
+          excludeTitle: 'false'  # optional: this excludes the title of a pull request
+          error: 'You need to start your commit message with "build|chore|ci|docs|style|refactor|perf|test:"'
