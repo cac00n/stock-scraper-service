@@ -3,5 +3,5 @@ run-name: Running Github Actions CI  🚀
 on: [pull_request]
 jobs:
   call-workflow-passing-data:
-    uses: cac00n/github-workflows/.github/workflows/bump-version.yml@ci-workflows
+    uses: cac00n/github-workflows/.github/workflows/github-actions-ci.yml@ci-workflows
     secrets: inherit
