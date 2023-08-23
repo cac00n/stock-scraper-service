@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stock_scraper_service"
-version = "0.0.1"
+version = "0.1.0"
 description = "Scraper service to get stock information from external sourcee"
 authors = ["k4tzi", "jibachi"]
 readme = "README.md"
@@ -26,7 +26,7 @@ line-length = 120
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.0.1"
+version = "0.1.0"
 tag_format = "v$version"
 version_files = [
     "pyproject.toml:version"
